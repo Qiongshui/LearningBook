@@ -8,4 +8,7 @@
 * [python学习](README.md)
     * [基础命令](toLearnPython/Python基础命令.md)
     * [基础语法](toLearnPython/Python基础语法.md)
-	
+	* [图形界面编程]()
+		* [PySide6安装及Pycharm配置](toLearnPython\图形界面编程\pyside6\1. PySide6安装及Pycharm配置.md)	
+		* [第一个Pyside6界面程序](toLearnPython\图形界面编程\pyside6\5. 第一个Pyside6界面程序.md)	
+
