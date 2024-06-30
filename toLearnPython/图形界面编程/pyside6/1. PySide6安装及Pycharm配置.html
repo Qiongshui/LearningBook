@@ -1,0 +1,425 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PySide6安装及Pycharm配置 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5. 第一个Pyside6界面程序.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Git学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../toLearnGit/10. Git软件的安装.html">
+            
+                <a href="../../../toLearnGit/10. Git软件的安装.html">
+            
+                    
+                    如何安装Git软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../toLearnGit/15. Git的初次使用.html">
+            
+                <a href="../../../toLearnGit/15. Git的初次使用.html">
+            
+                    
+                    初识Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                <a href="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                    
+                    如何在Github上制作电子书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    python学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Python基础命令.html">
+            
+                <a href="../../Python基础命令.html">
+            
+                    
+                    基础命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Python基础语法.html">
+            
+                <a href="../../Python基础语法.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    图形界面编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.3.1" data-path="1. PySide6安装及Pycharm配置.html">
+            
+                <a href="1. PySide6安装及Pycharm配置.html">
+            
+                    
+                    PySide6安装及Pycharm配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="5. 第一个Pyside6界面程序.html">
+            
+                <a href="5. 第一个Pyside6界面程序.html">
+            
+                    
+                    第一个Pyside6界面程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >PySide6安装及Pycharm配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Qiongshui Wu, Ph.D, 06/25/2024</p>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://blog.csdn.net/baiydn/article/details/126483010" target="_blank">PyCharm&#x4E0B;&#x5B89;&#x88C5;&#x914D;&#x7F6E;PySide6&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF08;Qt Designer&#x3001;PyUIC&#x548C;PyRCC&#xFF09;_pycharm pyside6-CSDN&#x535A;&#x5BA2;</a></p>
+<h2 id="&#x6D4B;&#x8BD5;&#x73AF;&#x5883;">&#x6D4B;&#x8BD5;&#x73AF;&#x5883;</h2>
+<p>Python3.12, windows 10 64&#x4F4D;, PyCharm2013&#x7248;&#x672C;&#x3002;</p>
+<h2 id="pyside6&#x5B89;&#x88C5;">PySide6&#x5B89;&#x88C5;</h2>
+<p>&#x8FD0;&#x884C;windows&#x7684;cmd&#xFF0C;&#x8F93;&#x5165;&#x6307;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">pip install PySide6
+
+<span class="hljs-comment"># &#x6216;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x4F8B;&#x5982;&#x4ECE;baidu&#x6E90;&#x8FDB;&#x884C;&#x5B89;&#x88C5;</span>
+pip install pyside6 -i https://mirror.baidu.com/pypi/simple
+</code></pre>
+<p><img src="%E9%99%84%E4%BB%B6/1577eed572cc83870a40417d76027221_MD5.jpeg" alt=""></p>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x5B89;&#x88C5;PySide6&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x5B89;&#x88C5;Qt Designer&#x3001;uic&#x548C;rcc&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x5378;&#x8F7D;PySide6&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x6307;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">pip uninstall PySide6
+</code></pre>
+<h2 id="pycharm&#x914D;&#x7F6E;">PyCharm&#x914D;&#x7F6E;</h2>
+<h3 id="&#x914D;&#x7F6E;qt-designer">&#x914D;&#x7F6E;Qt Designer</h3>
+<p>&#x6253;&#x5F00;PyCharm&#x4E2D;&#x7684;&#x8BBE;&#x7F6E;&#x754C;&#x9762;,</p>
+<p><img src="%E9%99%84%E4%BB%B6/70afe330879262b7f4e7677c730cd440_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/43e560b889c27b6df8b4b1e435a4cddf_MD5.jpeg" alt=""></p>
+<p>&#x627E;&#x5230;<font color="#ffff00">designer.exe</font>&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x586B;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#xFF1A;
+<img src="%E9%99%84%E4%BB%B6/5724fb1f77f8f8d0f5113a76e1d2756c_MD5.jpeg" alt=""></p>
+<p>Arguments&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$FilePath$</font>&#xFF0C;&#x52A0;&#x4E0A;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6253;&#x5F00;&#x4F60;&#x9009;&#x4E2D;&#x7684;ui&#x6587;&#x4EF6;&#x3002;</p>
+<p>Working directory&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$ProjectFileDir$</font>&#xFF0C;&#x610F;&#x601D;&#x662F;&#x628A;&#x9ED8;&#x8BA4;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x8BBE;&#x4E3A;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x81F3;&#x6B64;Qt Desinger&#x914D;&#x7F6E;&#x5B8C;&#x6BD5;&#x3002;&#x5728;PyCharm&#x4E2D;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x5217;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6253;&#x5F00;Qt Desinger&#x3002;</p>
+<h3 id="&#x5982;&#x4F55;&#x6253;&#x5F00;qtdesinger">&#x5982;&#x4F55;&#x6253;&#x5F00;QtDesinger</h3>
+<h4 id="&#x65B9;&#x6CD5;1">&#x65B9;&#x6CD5;1</h4>
+<p>&#x5728;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF08;&#x65B0;&#x5EFA;ui&#x65F6;&#xFF09;&#x6216;&#x4F60;&#x8981;&#x7F16;&#x8F91;&#x7684;ui&#x6587;&#x4EF6;&#x4E0A;&#x6253;&#x5F00;&#x53F3;&#x952E;&#x83DC;&#x5355;&#xFF0C;&#x627E;&#x5230;External Tools&#xFF08;&#x6216;&#x4F60;&#x8BBE;&#x7F6E;&#x7684;Group&#x540D;&#x79F0;&#xFF09;&#xFF0C;&#x6253;&#x5F00;PySide6 QtDesinger&#x3002;</p>
+<h4 id="&#x65B9;&#x6CD5;2">&#x65B9;&#x6CD5;2</h4>
+<p>&#x5728;&#x4E3B;&#x83DC;&#x5355;&#x680F;&#x4E0A;&#x7684;Tools&#x83DC;&#x5355;&#x4E2D;&#x627E;&#x5230;External Tools&#xFF08;&#x6216;&#x4F60;&#x8BBE;&#x7F6E;&#x7684;Group&#x540D;&#x79F0;&#xFF09;&#xFF0C;&#x6253;&#x5F00;PySide6 QtDesinger&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/b244d810abd6422b12e708d5f7a733a7_MD5.jpeg" alt=""></p>
+<h3 id="&#x914D;&#x7F6E;pyuic">&#x914D;&#x7F6E;PyUIC</h3>
+<p><code>uic</code>  (User Interface Compiler)&#x5DE5;&#x5177;&#x7528;&#x4E8E;&#x5C06; Qt Designer &#x8BBE;&#x8BA1;&#x7684; <code>.ui</code> &#x6587;&#x4EF6;&#x8F6C;&#x6362;&#x6210; C++ &#x6216; Python &#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;<code>.ui</code> &#x6587;&#x4EF6;&#x662F;&#x4E00;&#x79CD; XML &#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E86;&#x754C;&#x9762;&#x8BBE;&#x8BA1;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x63A7;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x3001;&#x5927;&#x5C0F;&#x3001;&#x6837;&#x5F0F;&#x4EE5;&#x53CA;&#x4FE1;&#x53F7;&#x548C;&#x69FD;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x901A;&#x8FC7; <code>uic</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7279;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A; <code>.h</code> &#x548C;&#x4E00;&#x4E2A; <code>.cpp</code> &#x6587;&#x4EF6;&#xFF08;&#x5BF9;&#x4E8E; C++&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A; <code>.py</code> &#x6587;&#x4EF6;&#xFF08;&#x5BF9;&#x4E8E; Python&#xFF09;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5F15;&#x7528;&#x548C;&#x63A7;&#x5236;&#x8FD9;&#x4E2A;&#x754C;&#x9762;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x624B;&#x52A8;&#x7F16;&#x5199;&#x5E03;&#x5C40;&#x548C;&#x63A7;&#x4EF6;&#x7684;&#x521B;&#x5EFA;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x7C7B;&#x4F3C;&#x4E8E;&#x524D;&#x9762;QtDesigner&#x7684;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/4397d08b086687795115612f3482a7ff_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/dfb08831efcd46607a62bd134ca8611d_MD5.jpeg" alt=""></p>
+<p><code>pyside6-uic.exe</code>&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x53EF;&#x80FD;&#x51FA;&#x4E86;&#x70B9;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x4E3A;&#x4EC0;&#x4E48;pyside6-uic.exe&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E0D;&#x5728;C&#x76D8;&#x7684;python312&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<p>Arguments&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$FileName$ -o $FileNameWithoutExtension$.py</font></p>
+<p>Working directory&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$ProjectFileDir$</font></p>
+<h3 id="&#x914D;&#x7F6E;pyrcc">&#x914D;&#x7F6E;PyRCC</h3>
+<p><code>rcc</code> (Resource Compiler)&#x5DE5;&#x5177;&#x7528;&#x4E8E;&#x5904;&#x7406; <code>.qrc</code> &#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#x96C6;&#x5408;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x56FE;&#x50CF;&#x3001;&#x5B57;&#x4F53;&#x3001;&#x7FFB;&#x8BD1;&#x6587;&#x4EF6;&#x6216;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x3002;<code>rcc</code> &#x5C06;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x7F16;&#x8BD1;&#x6210;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#xFF08;&#x901A;&#x5E38;&#x662F; <code>.rcc</code> &#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x5934;&#x6587;&#x4EF6;&#xFF08;&#x901A;&#x5E38;&#x662F; <code>.cpp</code> &#x548C; <code>.h</code> &#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x5B9E;&#x9645;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x51CF;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x90E8;&#x7F72;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x63D0;&#x9AD8;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x8D44;&#x6E90;&#x66F4;&#x5BB9;&#x6613;&#x7BA1;&#x7406;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>rcc</code> &#x7F16;&#x8BD1;&#x7684;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x524D;&#x7F00; <code>:/</code> &#x6216; <code>qrc:/</code> &#x6765;&#x8BBF;&#x95EE;&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x51B3;&#x4E8E;&#x4F7F;&#x7528;&#x7684; Qt &#x7248;&#x672C;&#x548C;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</p>
+<p>&#x53C2;&#x7167;PyDesinger&#x548C;PyUIC&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/18e9b4db96c6ae38dee12bd20c332ebd_MD5.jpeg" alt=""></p>
+<p><code>pyside6-rcc.exe</code>&#x6587;&#x4EF6;&#x3002;</p>
+<p>Arguments&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$FileName$ -o $FileNameWithoutExtension$.py</font></p>
+<p>Working directory&#x4E2D;&#x586B;&#x5199;<font color="#ffc000">$ProjectFileDir$</font>&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x6548;&#x679C;&#x4E3A;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/bd02cc2e025b3ff33e85ce92ac341aa5_MD5.jpeg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="5. 第一个Pyside6界面程序.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 第一个Pyside6界面程序">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PySide6安装及Pycharm配置","level":"1.3.3.1","depth":3,"next":{"title":"第一个Pyside6界面程序","level":"1.3.3.2","depth":3,"path":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","ref":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","articles":[]},"previous":{"title":"图形界面编程","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"PySide6安装及Pycharm配置","level":"1.3.3.1","depth":3,"path":"toLearnPython/图形界面编程/pyside6/1. PySide6安装及Pycharm配置.md","ref":"toLearnPython/图形界面编程/pyside6/1. PySide6安装及Pycharm配置.md","articles":[]},{"title":"第一个Pyside6界面程序","level":"1.3.3.2","depth":3,"path":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","ref":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"toLearnPython/图形界面编程/pyside6/1. PySide6安装及Pycharm配置.md","mtime":"2024-06-30T14:15:24.387Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-30T14:27:16.720Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,439 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第一个Pyside6界面程序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="1. PySide6安装及Pycharm配置.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Git学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../toLearnGit/10. Git软件的安装.html">
+            
+                <a href="../../../toLearnGit/10. Git软件的安装.html">
+            
+                    
+                    如何安装Git软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../toLearnGit/15. Git的初次使用.html">
+            
+                <a href="../../../toLearnGit/15. Git的初次使用.html">
+            
+                    
+                    初识Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                <a href="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                    
+                    如何在Github上制作电子书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    python学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Python基础命令.html">
+            
+                <a href="../../Python基础命令.html">
+            
+                    
+                    基础命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Python基础语法.html">
+            
+                <a href="../../Python基础语法.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    图形界面编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="1. PySide6安装及Pycharm配置.html">
+            
+                <a href="1. PySide6安装及Pycharm配置.html">
+            
+                    
+                    PySide6安装及Pycharm配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.2" data-path="5. 第一个Pyside6界面程序.html">
+            
+                <a href="5. 第一个Pyside6界面程序.html">
+            
+                    
+                    第一个Pyside6界面程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >第一个Pyside6界面程序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Qiongshui Wu, Ph.D, 06/30/2024</p>
+<p>&#x672C;&#x793A;&#x4F8B;&#x6F14;&#x793A;&#x7684;&#x662F;&#x5982;&#x4F55;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6765;&#x521B;&#x5EFA;&#x7A97;&#x53E3;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h2 id="pycharm&#x65B0;&#x5EFA;&#x5DE5;&#x7A0B;">PyCharm&#x65B0;&#x5EFA;&#x5DE5;&#x7A0B;</h2>
+<p><img src="%E9%99%84%E4%BB%B6/508695a2f05f513a153889824de19951_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/b9a7e131a1b28191b38a588e499371f7_MD5.jpeg" alt=""></p>
+<p>&#x8BBE;&#x7F6E;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>location&#xFF1A; &#x672C;&#x5DE5;&#x7A0B;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x5B58;&#x653E;&#x5728;&#x54EA;&#x4E2A;&#x76EE;&#x5F55;</li>
+<li>New environment :  &#x91C7;&#x7528;&#x65B0;&#x7684;python&#x865A;&#x62DF;&#x73AF;&#x5883;<ul>
+<li>Location: &#x65B0;&#x7684;python&#x865A;&#x62DF;&#x73AF;&#x5883;&#x5B58;&#x653E;&#x5728;&#x54EA;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;</li>
+<li>Inherit global site-packages: &#x9009;&#x4E2D;&#xFF0C;&#x5219;&#x91C7;&#x7528;python&#x5168;&#x5C40;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x628A;&#x8F6F;&#x4EF6;&#x5305;&#x518D;&#x4E3A;&#x672C;&#x5DE5;&#x7A0B;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x4E00;&#x8FB9;&#x3002;</li>
+<li>Make available site-packages: &#x662F;&#x5426;&#x628A;&#x672C;&#x5DE5;&#x7A0B;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x7ED9;&#x5176;&#x5B83;&#x5DE5;&#x7A0B;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+</li>
+<li>Create a main.py welcome script: &#x662F;&#x5426;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x540D;&#x4E3A; <code>main.py</code>&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/c7178999d2b6286e8e82dceaf0d06718_MD5.jpeg" alt=""></p>
+<h2 id="&#x7F16;&#x5199;&#x4EE3;&#x7801;">&#x7F16;&#x5199;&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-  </span>
+<span class="hljs-comment"># &#x4E0A;&#x9762;&#x8FD9;&#x4E00;&#x884C;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5F53;&#x4EE3;&#x7801;&#x542B;&#x6709;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x65F6;  </span>
+
+<span class="hljs-comment"># &#x8FD9;&#x4E00;&#x884C;&#x5BFC;&#x5165;&#x5FC5;&#x8981;&#x7684;QT&#x7C7B;  </span>
+<span class="hljs-keyword">from</span> PySide6.QtWidgets <span class="hljs-keyword">import</span> QApplication, QWidget,QLabel, QPushButton, QMessageBox  
+
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x69FD;&#x51FD;&#x6570;&#xFF0C;&#x54CD;&#x5E94;&#x6309;&#x94AE;&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;  </span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_oneButton_clicked</span><span class="hljs-params">()</span>:</span>  
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x6309;&#x94AE;&#x88AB;&#x70B9;&#x51FB;&#x540E;&#x7684;&#x69FD;&#x51FD;&#x6570;  </span>
+    QMessageBox.information(topWindow, <span class="hljs-string">&apos;&#x4FE1;&#x606F;&apos;</span>, <span class="hljs-string">&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;&#x6309;&#x94AE;!&apos;</span>)  
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A; QApplication &#x5B9E;&#x4F8B;&#xFF0C;&#x4E00;&#x4E2A;QT&#x7A0B;&#x5E8F;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;QApplication&#x5BF9;&#x8C61;  </span>
+app = QApplication()  
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7684; QWidget &#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EE3;&#x8868;&#x7740;&#x6211;&#x4EEC;&#x7684;&#x7A97;&#x4F53;&#x3002;  </span>
+topWindow = QWidget()  
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x7A97;&#x4F53;&#x6807;&#x9898;  </span>
+topWindow.setWindowTitle(<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x7A97;&#x53E3;&#x6807;&#x9898;&quot;</span>)  
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x5927;,&#x5355;&#x4F4D;&#x4E3A;&#x50CF;&#x7D20;(&#x5BBD;&#x5EA6;&#xFF0C;&#x9AD8;&#x5EA6;)&#x3002;  </span>
+topWindow.setFixedSize(<span class="hljs-number">400</span>, <span class="hljs-number">300</span>)  
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A; QLabel &#x5BF9;&#x8C61;&#xFF0C;&#x4F5C;&#x4E3A;topWindow&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x3002;  </span>
+oneLabel = QLabel(<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&quot;</span>, topWindow)  
+<span class="hljs-comment"># &#x628A;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x6807;&#x7B7E;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x5750;&#x6807;&#x4E3A;&#x76F8;&#x5BF9;&#x4E8E;&#x7236;&#x7A97;&#x53E3;&#xFF0C;(x&#x5750;&#x6807;&#xFF0C;y&#x5750;&#x6807;)  </span>
+oneLabel.move(<span class="hljs-number">100</span>, <span class="hljs-number">150</span>)  
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x4F5C;&#x4E3A;topWindow&#x7684;&#x5B50;&#x7A97;&#x53E3;  </span>
+onePushButton = QPushButton(<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&quot;</span>, topWindow)  
+<span class="hljs-comment"># &#x628A;&#x8FD9;&#x4E2A;&#x6309;&#x94AE;&#x8FDB;&#x884C;&#x79FB;&#x52A8;&#x5230;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;  </span>
+onePushButton.move(<span class="hljs-number">100</span>, <span class="hljs-number">200</span>)  
+<span class="hljs-comment"># &#x8FDE;&#x63A5;&#x4FE1;&#x53F7;&#x548C;&#x69FD;&#xFF0C; clicked&#x4E3A;&#x4FE1;&#x53F7;&#xFF0C;&#x5B83;&#x662F;QPushButton&#x7C7B;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x7684;  </span>
+<span class="hljs-comment"># connect&#x4E3A;&#x8FDE;&#x63A5;&#xFF0C;&#x8FD9;&#x662F;QT&#x7684;&#x5173;&#x952E;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x7528;&#x4E8E;&#x628A;signal&#x548C;slot&#x8FDE;&#x63A5;&#x8D77;&#x6765;  </span>
+<span class="hljs-comment"># &#x5706;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#x7684;&#x65F6;&#x69FD;&#x51FD;&#x6570;&#xFF0C;&#x5373;slot&#x51FD;&#x6570;&#xFF0C;&#x5F53;onePushButton&#x88AB;&#x70B9;&#x51FB;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x53D1;&#x51FA;clicked&#x4FE1;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;slot&#x69FD;&#x51FD;&#x6570;  </span>
+onePushButton.clicked.connect(on_oneButton_clicked)  <span class="hljs-comment"># &#x8FDE;&#x63A5;&#x6309;&#x94AE;&#x7684; clicked &#x4FE1;&#x53F7;&#x5230;&#x69FD;&#x51FD;&#x6570;  </span>
+
+<span class="hljs-comment"># &#x628A;topWindow&#x7A97;&#x4F53;&#x663E;&#x793A;&#x51FA;&#x6765;  </span>
+topWindow.show()  
+
+<span class="hljs-comment"># &#x4E0B;&#x9762;&#x8FD9;&#x4E00;&#x6761;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x963B;&#x585E;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x7A0B;&#x5E8F;&#x76F4;&#x63A5;&#x9000;&#x51FA;&#x4E86;  </span>
+app.exec()
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x540E;&#x7684;&#x6548;&#x679C;&#x4E3A;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/ff27fb355180c9d87b9c750b1fb759d6_MD5.jpeg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1. PySide6安装及Pycharm配置.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: PySide6安装及Pycharm配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第一个Pyside6界面程序","level":"1.3.3.2","depth":3,"previous":{"title":"PySide6安装及Pycharm配置","level":"1.3.3.1","depth":3,"path":"toLearnPython/图形界面编程/pyside6/1. PySide6安装及Pycharm配置.md","ref":"toLearnPython/图形界面编程/pyside6/1. PySide6安装及Pycharm配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","mtime":"2024-06-30T14:15:54.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-06-30T14:27:16.720Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
