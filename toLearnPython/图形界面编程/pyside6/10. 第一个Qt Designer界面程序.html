@@ -1,0 +1,563 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10. 第一个Qt Designer界面程序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="5. 第一个Pyside6界面程序.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Git学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../toLearnGit/10. Git软件的安装.html">
+            
+                <a href="../../../toLearnGit/10. Git软件的安装.html">
+            
+                    
+                    如何安装Git软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../toLearnGit/15. Git的初次使用.html">
+            
+                <a href="../../../toLearnGit/15. Git的初次使用.html">
+            
+                    
+                    初识Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                <a href="../../../toLearnGit/50. 在Github上制作电子书.html">
+            
+                    
+                    如何在Github上制作电子书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    python学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Python基础命令.html">
+            
+                <a href="../../Python基础命令.html">
+            
+                    
+                    基础命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Python基础语法.html">
+            
+                <a href="../../Python基础语法.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    图形界面编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="1. PySide6安装及Pycharm配置.html">
+            
+                <a href="1. PySide6安装及Pycharm配置.html">
+            
+                    
+                    PySide6安装及Pycharm配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="5. 第一个Pyside6界面程序.html">
+            
+                <a href="5. 第一个Pyside6界面程序.html">
+            
+                    
+                    第一个Pyside6界面程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.3" data-path="10. 第一个Qt Designer界面程序.html">
+            
+                <a href="10. 第一个Qt Designer界面程序.html">
+            
+                    
+                    10. 第一个Qt Designer界面程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >10. 第一个Qt Designer界面程序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Qiongshui Wu, Ph.D, 07/01/2024</p>
+<p>&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6765;&#x521B;&#x5EFA;&#x7A97;&#x53E3;&#x7A0B;&#x5E8F;&#xFF0C;&#x672C;&#x7B14;&#x8BB0;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5229;&#x7528;QT Designer&#x521B;&#x5EFA;&#x6240;&#x89C1;&#x5373;&#x6240;&#x5F97;&#x7684;&#x754C;&#x9762;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;pycharm&#x5DE5;&#x7A0B;">&#x521B;&#x5EFA;PyCharm&#x5DE5;&#x7A0B;</h2>
+<p><img src="%E9%99%84%E4%BB%B6/421f95ac7e5169f8205fb319903ee1cd_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/f017e26ca09925719d4c9f2f5fe4b0f8_MD5.jpeg" alt=""></p>
+<p>&#x521B;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/35033f0d8aa7031cea7394d622258812_MD5.jpeg" alt=""></p>
+<h2 id="&#x8FD0;&#x884C;qtdesigner">&#x8FD0;&#x884C;QtDesigner</h2>
+<h3 id="&#x8FD0;&#x884C;qt-designer">&#x8FD0;&#x884C;Qt Designer</h3>
+<p>&#x70B9;&#x51FB;&#x83DC;&#x5355;<font color="#ffc000">Tool/External Tools</font>&#x4E0B;&#x7684;&#x4E0E;<font color="#ffc000">Desgner.exe</font>&#x76F8;&#x5173;&#x7684;&#x83DC;&#x5355;&#x9879;&#x3002;&#x8FD9;&#x4E2A;&#x83DC;&#x5355;&#x9879;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x524D;&#x9762;&#x7684;&#x7B14;&#x8BB0;&#x4E2D;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/a33f1f269d612c7754c95fd26449b18d_MD5.jpeg" alt=""></p>
+<h3 id="&#x521B;&#x5EFA;&#x4E3B;&#x7A97;&#x53E3;">&#x521B;&#x5EFA;&#x4E3B;&#x7A97;&#x53E3;</h3>
+<p><img src="%E9%99%84%E4%BB%B6/b2803cf4fa7a82372d38a3a0756a43e6_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/163bc2116faceb3822edc62c7dacce34_MD5.jpeg" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4E0A;&#x9762;&#x4E3B;&#x7A97;&#x53E3;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x597D;&#x4E86;&#xFF0C;&#x4E3B;&#x7A97;&#x53E3;&#x6709;&#x83DC;&#x5355;&#x680F;&#xFF0C;&#x6709;&#x5BA2;&#x6237;&#x533A;&#x7B49;&#x3002;</p>
+<h3 id="&#x62D6;&#x5165;&#x63A7;&#x4EF6;">&#x62D6;&#x5165;&#x63A7;&#x4EF6;</h3>
+<p>&#x5148;&#x62D6;&#x5165;&#x4E00;&#x4E2A;QPushButton&#xFF0C;&#x5373;&#x6309;&#x94AE;&#x63A7;&#x4EF6;&#xFF0C;&#x62D6;&#x5230;&#x4E3B;&#x7A97;&#x53E3;&#x4E2D;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/4081c1c6b870e47f1bd5a09cbd0fe460_MD5.jpeg" alt=""></p>
+<p>&#x518D;&#x62D6;&#x5165;&#x4E00;&#x4E2A;QLabel&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x6807;&#x7B7E;&#x663E;&#x793A;&#x63A7;&#x4EF6;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/19fd3a86f237f7dcf2be9677ad05fe46_MD5.jpeg" alt=""></p>
+<p>&#x4E24;&#x4E2A;&#x63A7;&#x4EF6;&#x62D6;&#x5165;&#x540E;&#x7684;&#x6548;&#x679C;&#x4E3A;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/630dd25fdaa5922cf4a5fba593f02087_MD5.jpeg" alt=""></p>
+<h3 id="&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#x7684;&#x5C5E;&#x6027;">&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#x7684;&#x5C5E;&#x6027;</h3>
+<p>&#x63A7;&#x4EF6;&#x62D6;&#x5165;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<h4 id="&#x51E0;&#x4E2A;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C5E;&#x6027;">&#x51E0;&#x4E2A;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C5E;&#x6027;</h4>
+<ul>
+<li>objectName
+ &#x8FD9;&#x662F;&#x63A7;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7A97;&#x4F53;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x63A7;&#x4EF6;&#x90FD;&#x6709;&#x552F;&#x4E00;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x91CD;&#x540D;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6765;&#x64CD;&#x4F5C;&#x63A7;&#x4EF6;&#x65F6;&#xFF0C;&#x662F;&#x4F9D;&#x636E;&#x63A7;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#x6765;&#x64CD;&#x4F5C;&#x6BCF;&#x4E00;&#x4E2A;&#x63A7;&#x4EF6;&#x7684;&#x3002;</li>
+<li>text
+text&#x662F;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x5C31;&#x662F;&#x754C;&#x9762;&#x663E;&#x793A;&#x65F6;&#x7528;&#x6237;&#x770B;&#x5230;&#x7684;&#x6587;&#x5B57;&#x3002;</li>
+<li>windowTitle
+ &#x8FD9;&#x662F;&#x7A97;&#x53E3;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x4E00;&#x822C;&#x5BF9;&#x4E8E;&#x4E3B;&#x7A97;&#x53E3;&#xFF0C;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x6216;widget&#x7A97;&#x4F53;&#x624D;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+<h4 id="&#x4FEE;&#x6539;&#x6309;&#x94AE;&#x5C5E;&#x6027;">&#x4FEE;&#x6539;&#x6309;&#x94AE;&#x5C5E;&#x6027;</h4>
+<ul>
+<li>&#x4FEE;&#x6539;&#x6309;&#x94AE;&#x7684;&#x540D;&#x5B57;</li>
+</ul>
+<p>&#x5148;&#x4FDD;&#x8BC1;&#x6309;&#x94AE;&#x5904;&#x4E8E;&#x88AB;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/042a2f5e60c711dfe47ea2dc2db61e2f_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/b0c4d717232295da055e9f353322f242_MD5.jpeg" alt=""></p>
+<ul>
+<li>&#x4FEE;&#x6539;&#x6309;&#x94AE;&#x7684;&#x663E;&#x793A;&#x5185;&#x5BB9;</li>
+</ul>
+<p><img src="%E9%99%84%E4%BB%B6/1f1a956c7a10feb7477c9d1f7b713094_MD5.jpeg" alt=""></p>
+<p><img src="%E9%99%84%E4%BB%B6/3158f33ca138df61ff66c5c7feb314c6_MD5.jpeg" alt=""></p>
+<h4 id="&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x5C5E;&#x6027;">&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x5C5E;&#x6027;</h4>
+<ul>
+<li>&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x540D;&#x5B57;</li>
+</ul>
+<p><img src="%E9%99%84%E4%BB%B6/bca86a39b4dd5e7b8b392013e51400b4_MD5.jpeg" alt=""></p>
+<ul>
+<li>&#x4FEE;&#x6539;&#x6807;&#x7B7E;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;</li>
+</ul>
+<p><img src="%E9%99%84%E4%BB%B6/dbb05455cdadd15069af72d5a4074a27_MD5.jpeg" alt=""></p>
+<p>&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x6548;&#x679C;&#x4E3A;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/6075b8a5216f72047346b9fae1bb44f2_MD5.jpeg" alt=""></p>
+<h2 id="&#x4FDD;&#x5B58;ui&#x8BBE;&#x8BA1;">&#x4FDD;&#x5B58;ui&#x8BBE;&#x8BA1;</h2>
+<p>&#x4E0A;&#x9762;&#x7684;&#x8BBE;&#x8BA1;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x754C;&#x9762;&#x4FDD;&#x5B58;&#x4E3A;&#x6269;&#x5C55;&#x540D;&#x4E3A;ui&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x559C;&#x597D;&#x547D;&#x540D;&#xFF0C;&#x6211;&#x547D;&#x540D;&#x4E3A;myFirstMainWindow.ui&#xFF0C;&#x628A;&#x5B83;&#x4FDD;&#x5B58;&#x5230;&#x524D;&#x9762;&#x5EFA;&#x7ACB;&#x7684;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<p><img src="%E9%99%84%E4%BB%B6/0c1f8c98b483aa94bfa028e51a4821b1_MD5.jpeg" alt=""></p>
+<p>&#x4FDD;&#x5B58;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x4E3A;:
+<img src="%E9%99%84%E4%BB%B6/e6c8a7d2cd40060f378564d32e7eb5ad_MD5.jpeg" alt=""></p>
+<h2 id="ui&#x8F6C;py&#x4EE3;&#x7801;&#x6587;&#x4EF6;">ui&#x8F6C;py&#x4EE3;&#x7801;&#x6587;&#x4EF6;</h2>
+<p><img src="%E9%99%84%E4%BB%B6/c8f2f89a84d5f7941209e6b77cb2511a_MD5.jpeg" alt=""></p>
+<p>&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x4F1A;&#x591A;&#x51FA;&#x4E00;&#x4E2A;&#x4E0E;<font color="#ffc000">myFirstMainWindow.ui</font>&#x540C;&#x6587;&#x4EF6;&#x540D;&#x7684;python&#x4EE3;&#x7801;&#x6587;&#x4EF6;<font color="#ffc000">myFirstMainWindow.py</font>&#x6587;&#x4EF6;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/563df7d7a68865c9671169f8157c9111_MD5.jpeg" alt=""></p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x5728;&#x5DE5;&#x7A0B;&#x4E0B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;<font color="#ffc000">myFirstMainWindow.py</font>&#x6587;&#x4EF6;&#xFF1A;</p>
+<p><img src="%E9%99%84%E4%BB%B6/601f5c8608faeebe16056a642089c7a8_MD5.jpeg" alt=""></p>
+<p><font color="#ffc000">myFirstMainWindow.py</font>&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E0D;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4E0B;&#x6B21;&#x4FEE;&#x6539;&#x4E86;ui&#x6587;&#x4EF6;&#xFF0C;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x91CD;&#x65B0;&#x751F;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x4FEE;&#x6539;&#x4E86;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x8986;&#x76D6;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-  </span>
+
+<span class="hljs-comment">################################################################################  </span>
+<span class="hljs-comment">## Form generated from reading UI file &apos;myFirstMainWindow.ui&apos;  </span>
+<span class="hljs-comment">##  </span>
+<span class="hljs-comment">## Created by: Qt User Interface Compiler version 6.7.2  </span>
+<span class="hljs-comment">##  </span>
+<span class="hljs-comment">## WARNING! All changes made in this file will be lost when recompiling UI file!  </span>
+<span class="hljs-comment">################################################################################  </span>
+
+<span class="hljs-keyword">from</span> PySide6.QtCore <span class="hljs-keyword">import</span> (QCoreApplication, QDate, QDateTime, QLocale,  
+    QMetaObject, QObject, QPoint, QRect,  
+    QSize, QTime, QUrl, Qt)  
+<span class="hljs-keyword">from</span> PySide6.QtGui <span class="hljs-keyword">import</span> (QBrush, QColor, QConicalGradient, QCursor,  
+    QFont, QFontDatabase, QGradient, QIcon,  
+    QImage, QKeySequence, QLinearGradient, QPainter,  
+    QPalette, QPixmap, QRadialGradient, QTransform)  
+<span class="hljs-keyword">from</span> PySide6.QtWidgets <span class="hljs-keyword">import</span> (QApplication, QLabel, QMainWindow, QMenuBar,  
+    QPushButton, QSizePolicy, QStatusBar, QWidget)  
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ui_MainWindow</span><span class="hljs-params">(object)</span>:</span>  
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setupUi</span><span class="hljs-params">(self, MainWindow)</span>:</span>  
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> MainWindow.objectName():  
+            MainWindow.setObjectName(<span class="hljs-string">u&quot;MainWindow&quot;</span>)  
+        MainWindow.resize(<span class="hljs-number">659</span>, <span class="hljs-number">507</span>)  
+        self.centralwidget = QWidget(MainWindow)  
+        self.centralwidget.setObjectName(<span class="hljs-string">u&quot;centralwidget&quot;</span>)  
+        self.pushButtonFirst = QPushButton(self.centralwidget)  
+        self.pushButtonFirst.setObjectName(<span class="hljs-string">u&quot;pushButtonFirst&quot;</span>)  
+        self.pushButtonFirst.setGeometry(QRect(<span class="hljs-number">60</span>, <span class="hljs-number">60</span>, <span class="hljs-number">111</span>, <span class="hljs-number">51</span>))  
+        self.labelInfoShow = QLabel(self.centralwidget)  
+        self.labelInfoShow.setObjectName(<span class="hljs-string">u&quot;labelInfoShow&quot;</span>)  
+        self.labelInfoShow.setGeometry(QRect(<span class="hljs-number">220</span>, <span class="hljs-number">60</span>, <span class="hljs-number">201</span>, <span class="hljs-number">51</span>))  
+        MainWindow.setCentralWidget(self.centralwidget)  
+        self.menubar = QMenuBar(MainWindow)  
+        self.menubar.setObjectName(<span class="hljs-string">u&quot;menubar&quot;</span>)  
+        self.menubar.setGeometry(QRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">659</span>, <span class="hljs-number">21</span>))  
+        MainWindow.setMenuBar(self.menubar)  
+        self.statusbar = QStatusBar(MainWindow)  
+        self.statusbar.setObjectName(<span class="hljs-string">u&quot;statusbar&quot;</span>)  
+        MainWindow.setStatusBar(self.statusbar)  
+
+        self.retranslateUi(MainWindow)  
+
+        QMetaObject.connectSlotsByName(MainWindow)  
+    <span class="hljs-comment"># setupUi  </span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">retranslateUi</span><span class="hljs-params">(self, MainWindow)</span>:</span>  
+        MainWindow.setWindowTitle(QCoreApplication.translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">u&quot;MainWindow&quot;</span>, <span class="hljs-keyword">None</span>))  
+        self.pushButtonFirst.setText(QCoreApplication.translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">u&quot;Pleae click me&quot;</span>, <span class="hljs-keyword">None</span>))  
+        self.labelInfoShow.setText(QCoreApplication.translate(<span class="hljs-string">&quot;MainWindow&quot;</span>, <span class="hljs-string">u&quot;\u70b9\u51fb\u6309\u94ae\u662f\u6211\u7684\u5185\u5bb9\u4f1a\u6539\u53d8&quot;</span>, <span class="hljs-keyword">None</span>))  
+    <span class="hljs-comment"># retranslateUi</span>
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x7A97;&#x53E3;&#x7C7B;">&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x7A97;&#x53E3;&#x7C7B;</h2>
+<p>&#x524D;&#x9762;ui&#x8BBE;&#x8BA1;&#x751F;&#x6210;&#x7684;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6269;&#x5145;&#x4E00;&#x4E9B;&#x529F;&#x80FD;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4ECE;&#x5B83;&#x7EE7;&#x627F;&#x4E0B;&#x6765;&#x7684;&#x7C7B;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x9F20;&#x6807;&#x53F3;&#x952E;&#x5728;&#x5DE5;&#x7A0B;&#x4E0A;&#x5355;&#x51FB;&#xFF0C;&#x9009;&#x62E9;<font color="#ffc000">New/Python File</font>&#xFF0C;</p>
+<p><img src="%E9%99%84%E4%BB%B6/951d1435abbb1da3b90ee15ebced4f8a_MD5.jpeg" alt=""></p>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<font color="#ffc000">myMainWindow.py</font>&#x7684;&#x6587;&#x4EF6;&#xFF0C;
+<img src="%E9%99%84%E4%BB%B6/fad65988acc3d6be654122101c1fd1e3_MD5.jpeg" alt=""></p>
+<p><font color="#ffc000">myMainWindow.py</font>&#x7684;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-  </span>
+<span class="hljs-comment"># &#x4E0A;&#x9762;&#x8FD9;&#x4E00;&#x884C;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5F53;&#x4EE3;&#x7801;&#x542B;&#x6709;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x65F6;  </span>
+
+<span class="hljs-comment"># &#x5BFC;&#x5165;&#x7CFB;&#x7EDF;&#x5305;  </span>
+<span class="hljs-keyword">import</span> sys  
+
+<span class="hljs-comment"># &#x5BFC;&#x5165;PySide&#x754C;&#x9762;&#x76F8;&#x5173;&#x7684;&#x8F6F;&#x4EF6;&#x5305;  </span>
+<span class="hljs-keyword">from</span> PySide6.QtWidgets <span class="hljs-keyword">import</span> QApplication, QMainWindow  
+
+<span class="hljs-comment"># &#x5BFC;&#x5165;&#x7531;QtDesigner&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;ui&#x751F;&#x6210;&#x7684;&#x7A97;&#x53E3;&#x7C7B;  </span>
+<span class="hljs-keyword">from</span> myFirstMainWindow <span class="hljs-keyword">import</span> Ui_MainWindow  
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x7A97;&#x53E3;&#x7C7B;&#xFF0C;&#x7C7B;&#x7684;&#x540D;&#x5B57;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x559C;&#x597D;&#x6765;&#x547D;&#x540D;&#xFF0C;&#x5B83;&#x4ECE;ui&#x751F;&#x6210;&#x7684;&#x90A3;&#x4E2A;&#x7A97;&#x53E3;&#x7C7B;&#x7EE7;&#x627F;&#x4E0B;&#x6765;  </span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span><span class="hljs-params">(QMainWindow, Ui_MainWindow)</span>:</span>  
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>  
+        super().__init__()  
+        self.setupUi(self)  
+        <span class="hljs-comment"># &#x5C06;&#x6309;pushButtonFirst&#x7684;&#x9F20;&#x6807;&#x70B9;&#x51FB;&#x4FE1;&#x53F7;&#x8FDE;&#x63A5;&#x5230;&#x672C;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x69FD;&#x51FD;&#x6570;pushButtonFirst_click  </span>
+        self.pushButtonFirst.clicked.connect(self.pushButtonFirst_click)  
+
+    <span class="hljs-comment"># pushButtonFirst&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x65F6;&#x5BF9;&#x5E94;&#x7684;&#x69FD;&#x51FD;&#x6570;  </span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pushButtonFirst_click</span><span class="hljs-params">(self)</span>:</span>  
+        self.labelInfoShow.setText(<span class="hljs-string">&quot;You&apos;ve clicked the pushbutton&quot;</span>)
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;mainpy&#x6587;&#x4EF6;">&#x4FEE;&#x6539;main.py&#x6587;&#x4EF6;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-  </span>
+<span class="hljs-comment"># &#x4E0A;&#x9762;&#x8FD9;&#x4E00;&#x884C;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5F53;&#x4EE3;&#x7801;&#x542B;&#x6709;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x65F6;  </span>
+<span class="hljs-keyword">import</span> sys  
+<span class="hljs-keyword">from</span> PySide6.QtWidgets <span class="hljs-keyword">import</span> QApplication, QMainWindow  
+
+<span class="hljs-comment"># &#x5BFC;&#x5165;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x7A97;&#x53E3;&#x7C7B;MainWindow  </span>
+<span class="hljs-keyword">from</span> myMainWindow <span class="hljs-keyword">import</span> MainWindow  
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:  
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;QApplication&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;Pyside&#x7A0B;&#x5E8F;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;QApplication&#x5BF9;&#x8C61;  </span>
+    app = QApplication(sys.argv)  
+
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x7A97;&#x4F53;&#x7C7B;&#x5BF9;&#x8C61;  </span>
+    myMainWindow = MainWindow()  
+
+    <span class="hljs-comment"># &#x663E;&#x793A;&#x8FD9;&#x4E2A;&#x7A97;&#x4F53;  </span>
+    myMainWindow.show()  
+
+    <span class="hljs-comment"># &#x6700;&#x540E;&#x4E00;&#x884C;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x6211;&#x4EEC;&#x770B;&#x4E0D;&#x5230;&#x7A97;&#x53E3;&#x7A0B;&#x5E8F;&#x5C31;&#x9000;&#x51FA;&#x4E86;  </span>
+    sys.exit(app.exec_())
+</code></pre>
+<h2 id="&#x8FD0;&#x884C;&#x7ED3;&#x679C;">&#x8FD0;&#x884C;&#x7ED3;&#x679C;</h2>
+<p><img src="%E9%99%84%E4%BB%B6/a7a58206a9d41b4abc83174120f64bfa_MD5.jpeg" alt=""></p>
+<p>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x540E;&#x7684;&#x754C;&#x9762;&#xFF1A;</p>
+<p><img src="&#x9644;&#x4EF6;/Pasted%20image%2020240701223553.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5. 第一个Pyside6界面程序.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第一个Pyside6界面程序">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10. 第一个Qt Designer界面程序","level":"1.3.3.3","depth":3,"previous":{"title":"第一个Pyside6界面程序","level":"1.3.3.2","depth":3,"path":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","ref":"toLearnPython/图形界面编程/pyside6/5. 第一个Pyside6界面程序.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"toLearnPython/图形界面编程/pyside6/10. 第一个Qt Designer界面程序.md","mtime":"2024-07-01T14:41:47.360Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-07-01T14:42:37.722Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
