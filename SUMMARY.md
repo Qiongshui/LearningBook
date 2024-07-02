@@ -12,4 +12,4 @@
 		* [1. PySide6安装及Pycharm配置](toLearnPython\图形界面编程\pyside6\1. PySide6安装及Pycharm配置.md)	
 		* [5. 第一个Pyside6界面程序](toLearnPython\图形界面编程\pyside6\5. 第一个Pyside6界面程序.md)	
 		* [10. 第一个Qt Designer界面程序](toLearnPython\图形界面编程\pyside6\10. 第一个Qt Designer界面程序.md)
-		* [15. QFileDialog文件选择对话框的使用](toLearnPython\图形界面编程\pyside6\15.QFileDialog文件选择对话框的使用.md)
+		* [15. QFileDialog文件选择对话框的使用](toLearnPython\图形界面编程\pyside6\15. QFileDialog文件选择对话框的使用.md)
